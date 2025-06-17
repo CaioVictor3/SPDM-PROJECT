@@ -31,4 +31,4 @@ Este projeto é uma aplicação web simples com foco em **login de usuários aut
 Após o login, você será direcionado para a tela `Produtos.html`, onde poderá:
 
 - Visualizar os produtos cadastrados.
-- Cadastrar novos produtos por meio de um formulário (em desenvolvimento ou já implementado).
+- Cadastrar novos produtos por meio de um formulário.
