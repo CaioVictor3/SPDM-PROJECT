@@ -4,7 +4,7 @@ Este projeto é uma aplicação web simples com foco em **login de usuários aut
 
 ## ✅ Funcionalidades
 
-- **Login seguro** com validação de e-mails e senhas pré-definidos.
+- **Login** com validação de e-mails e senhas pré-definidos.
 - Exibição de mensagens de erro caso os dados estejam incorretos ou vazios.
 - Redirecionamento automático para a tela de produtos após login.
 - **Cadastro de produtos**, que são exibidos dinamicamente.
@@ -32,6 +32,3 @@ Após o login, você será direcionado para a tela `Produtos.html`, onde poderá
 
 - Visualizar os produtos cadastrados.
 - Cadastrar novos produtos por meio de um formulário (em desenvolvimento ou já implementado).
-
-## 📁 Estrutura do Projeto
-
