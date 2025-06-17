@@ -1,0 +1,181 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:host {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #E4EBF0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    header {
+        img {
+            position: relative;
+            width: 16em;
+            top: 4em;
+            left: calc(50% - 8em);
+        }
+    }
+
+    main {
+        background: linear-gradient(#C3D2D9, #325973);
+        padding: 4em 2em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        align-items: center;
+
+        > section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > h1 {
+                color: #f1f1f1;
+                font-size: 1.8em;
+                text-shadow: 3px 3px 5px #6b777e;;
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5em;
+
+                input, textarea {
+                    font-size: 1.2em;
+                    border-radius: 8px;
+                }
+
+                > div:nth-child(1) {
+                    display: flex;
+                    width: 100%;
+                    gap: 0.6em;
+                    /* padding: 0 1.2em; */
+
+                    span {
+                        background-color: #E4EBF0;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 30px;
+                        border: 2px solid gray;
+                        box-shadow: 1px 1px 2px;
+                        padding: .2em;
+    
+                        img {
+                            width: 8em;
+                        }
+                    }
+        
+                    textarea {
+                        /* width: calc(65% - 0.6em); */
+                        padding: .2em;
+                        border: 2px solid gray;
+                        box-shadow: 1px 1px 2px;
+                        flex-grow: 1;
+                        border-radius: 8px;
+                    }
+                }
+
+                > div:nth-child(2) {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap; 
+                    gap: 0.6em;
+                    justify-content: center;
+
+                    /* > :not(input:nth-child(3)) { */
+                    input {
+                        padding: .2em;
+                        border: 2px solid gray;
+                        box-shadow: 1px 1px 2px;
+                        flex-grow: 1;
+                    }
+
+                    input:focus-visible {
+                        outline: none;
+                        border: 2px solid #3b7499;
+                        box-shadow: 1px 1px 2px;
+                    }
+                    /* } */
+                    /* width: 4em; */
+                    /* input { */
+                        /* :not(input:nth-child(3)) {
+                            flex-grow: 1;
+                        } */
+                    /* } */
+                }
+
+                > .form-buttons {
+                    display: flex;
+                    width: 18em;
+                    gap: 1em;
+                    margin-top: 1.7em;
+                    flex-direction: column;
+
+                    button {
+                        width: 100%;
+                        border-radius: 12px;
+                        background-color: white;
+                        padding: .5em;
+                        font-size: 1em;
+                        font-weight: 700;
+                        box-shadow: 1px 1px 2px;
+                    }
+
+                    button:first-child {
+                        border: 2px solid indianred;
+                        color: indianred;
+                    }
+
+                    button:last-child {
+                        border: 2px solid #0767a7;
+                        color: #0767a7;
+                    }
+                }
+            }
+        }
+
+        footer {
+            color: #E4EBF0;
+            text-shadow: 3px 3px 5px #6b777e;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .form-buttons {
+        flex-direction: row !important;
+        width: 24em !important;
+
+        button {
+            width: 50% !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .form-buttons {
+        flex-direction: row !important;
+        width: 32em !important;
+
+        button {
+            width: 50% !important;
+        }
+    }
+}

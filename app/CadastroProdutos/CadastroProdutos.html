@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Produtos</title>
+    <link rel="stylesheet" href="CadastroProdutos.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../../assets/images/Logo.png" alt="Logo da empresa" /><br />
+    </header>
+
+    <main>
+      <section>
+        <h1>Cadastrar Produtos</h1>
+        <ul id="errors"></ul>
+        <form id="form-cadastro">
+          <div>
+            <span>
+              <img src="../../assets/images/upload.png" alt="" />
+            </span>
+            <textarea
+              placeholder="Descrição"
+              id="descricao"
+              name="descricao"
+            ></textarea>
+          </div>
+
+          <div>
+            <input
+              placeholder="Nome"
+              type="text"
+              id="nome"
+              name="nome"
+              required
+            />
+            <input
+              placeholder="Quantidade"
+              type="number"
+              id="quantidade"
+              name="quantidade"
+              min="0"
+            />
+            <input
+              placeholder="Preço"
+              type="number"
+              id="preco"
+              name="preco"
+              min="0.01"
+              step="0.01"
+              required
+            />
+          </div>
+
+          <div class="form-buttons">
+            <button
+              type="button"
+              onclick="location.href='../TelaInicial/Produtos.html'"
+            >
+              Cancelar
+            </button>
+            <button type="submit" id="salvarProduto">Salvar</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; SPDM</p>
+      </footer>
+    </main>
+
+    <script src="Cadastro.js"></script>
+  </body>
+</html>

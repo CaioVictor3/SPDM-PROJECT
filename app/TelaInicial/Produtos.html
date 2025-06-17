@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Produtos</title>
+  </head>
+
+  <body>
+    <nav class="nav-header">
+      <input type="search" placeholder="Pesquisar" id="searchInput" />
+    </nav>
+    <main>
+      <nav class="nav-produtos">
+        <h2>Produtos</h2>
+        <nav class="nav-produtos-top">
+          <button
+            onclick="window.location.href='../CadastroProdutos/CadastroProdutos.html'"
+          >
+            <i class="fas fa-add"></i>
+          </button>
+
+          <button><i class="fas fa-edit"></i></button>
+          <button><i class="fas fa-trash"></i></button>
+        </nav>
+        <nav class="nav-produtos-bottom">
+          <ul id="produtos"></ul>
+        </nav>
+      </nav>
+      <nav class="nav-bottom">
+        <button><i class="fas fa-house"></i> Home</button>
+        <button><i class="fas fa-bars"></i> Relatórios</button>
+        <button><i class="fas fa-cart-shopping"></i> Carrinho</button>
+        <button><i class="fas fa-user"></i> Perfil</button>
+      </nav>
+    </main>
+
+    <script src="telaInicial.js"></script>
+  </body>
+</html>
